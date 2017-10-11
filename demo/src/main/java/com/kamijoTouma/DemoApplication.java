@@ -8,6 +8,7 @@ import com.kamijoTouma.controllers.ConstructorInjectedController;
 import com.kamijoTouma.controllers.GetterInjectedController;
 import com.kamijoTouma.controllers.MyController;
 import com.kamijoTouma.controllers.PropertyInjectedController;
+import com.kamijoTouma.controllers.TestController;
 
 @SpringBootApplication
 public class DemoApplication {
@@ -19,5 +20,6 @@ public class DemoApplication {
 		System.out.println(ctx.getBean(PropertyInjectedController.class).sayHello());
 		System.out.println(ctx.getBean(GetterInjectedController.class).sayHello());
 		System.out.println(ctx.getBean(ConstructorInjectedController.class).sayHello());
+		System.out.println(ctx.getBean(TestController.class).doTest());
 	}
 }
